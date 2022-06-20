@@ -483,6 +483,8 @@ img {
 }
 
 .social-networks {
+  max-width: 357px;
+  max-width: 100%;
   font-size: 18px;
   line-height: 22px;
   /* identical to box height, or 122% */
@@ -831,6 +833,15 @@ img {
   max-width: 1600px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero {
+    padding: 118px 0;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-header.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-header.jpg);
+  }
+}
+
 .hero__title {
   width: 696px;
   font-weight: 900;
@@ -849,9 +860,11 @@ img {
 @media screen and (max-width: 767.98px) {
   .hero__title {
     max-width: 360px;
+    max-width: 100%;
     font-weight: 900;
     font-size: 26px;
     line-height: 42px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1506,8 +1519,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .clients__item {
-    max-width: 210px;
-    width: 100%;
+    width: 210px;
     margin-bottom: 30px;
   }
   .clients__item:nth-child(2n) {
@@ -1686,7 +1698,8 @@ img {
 }
 
 .project-item {
-  width: 450px;
+  max-width: 450px;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 

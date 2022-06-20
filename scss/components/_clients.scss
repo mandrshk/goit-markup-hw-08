@@ -32,8 +32,7 @@
     
 
     @include mq(mobile-only) {
-        max-width: 210px;
-        width: 100%;
+        width: 210px;
         margin-bottom: 30px;
         &:nth-child(2n) {
             margin-right: 0;
