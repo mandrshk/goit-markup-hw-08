@@ -27,6 +27,14 @@
     margin-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
+
+    @include mq(mobile-only){
+        max-width: 360px;
+        font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            
+    }
 }
 
 .hero__button {
@@ -77,6 +85,11 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @include mq(not-desktop){
+        width: 450px;
+            height: 609px;
+    }
 }
 
 .button-modal {
@@ -143,6 +156,10 @@
     &:focus {
     border: 1px solid var(--accent-color);
 }
+
+@include mq(not-desktop){
+    width: 370px;
+}
 }
 
 
@@ -187,6 +204,10 @@
             outline: transparent;
             border: 1px solid var(--accent-color);
         }
+
+        @include mq(not-desktop){
+            width: 370px;
+        }
 }
 
 .checkbox {
@@ -211,6 +232,12 @@
     color: #757575;
 
     margin-bottom: 30px;
+
+    @include mq(not-desktop){
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+    }
 }
 
 .icon-checkbox {

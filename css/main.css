@@ -377,6 +377,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 15px;
 }
 
 .navbar__logo-webstudio {
@@ -406,11 +407,11 @@ img {
   display: none;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
@@ -420,8 +421,9 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  padding: 0 40px;
+  padding: 48px 40px;
   min-height: 700px;
+  z-index: 2;
   background-color: var(--primary-white-color);
 }
 
@@ -705,13 +707,13 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-left: auto;
+    padding: 21px 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .auth-navigation__item {
     display: inline;
-    margin-bottom: 10px;
   }
   .auth-navigation__item:last-child {
     padding: 0;
@@ -824,6 +826,15 @@ img {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero__title {
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
 .hero__button {
   font-family: 'Roboto';
   font-style: normal;
@@ -871,6 +882,13 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .button-modal {
@@ -934,6 +952,12 @@ img {
   border: 1px solid var(--accent-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .modal-input {
+    width: 370px;
+  }
+}
+
 .modal-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
@@ -973,6 +997,12 @@ img {
   border: 1px solid var(--accent-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .give-feedback {
+    width: 370px;
+  }
+}
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -996,6 +1026,14 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .agree-contract {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .icon-checkbox {
@@ -1448,7 +1486,8 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .clients__item {
-    width: 210px;
+    max-width: 210px;
+    width: 100%;
     margin-bottom: 30px;
   }
   .clients__item:nth-child(2n) {

@@ -26,49 +26,164 @@
 
     <header class="header">
       <div class="header__div-nav container">
-        <nav class="navbar">
+        <a
+          href="#"
+          class="navbar__logo-webstudio"
+        >
+          <span class="navbar__logospan">Web</span
+          >Studio</a
+        >
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-icons"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/icons.svg#icon-close-menu"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icons.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div
+          class="menu-container"
+          id="menu-container"
+          data-menu
+        >
+          <nav class="navbar">
+            <ul class="sitenav">
+              <li class="sitenav__item">
+                <a
+                  href="./index.html"
+                  class="sitenav__link sitenav__link--opened"
+                  >Студия</a
+                >
+              </li>
+              <li class="sitenav__item">
+                <a
+                  href="./portfolio.html"
+                  class="sitenav__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="sitenav__item">
+                <a href="#" class="sitenav__link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a
+                href="tel:+380961111111"
+                class="auth-nav__link auth-nav__phone"
+                aria-label="Phone Icon"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li
+              class="auth-nav__item auth-nav__item-mail"
+            >
+              <a
+                href="mailto:info@devstudio.com"
+                class="auth-nav__link auth-nav__mail"
+                aria-label="Mail Icon"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a
+                href=""
+                class="social-networks__link"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                href=""
+                class="social-networks__link"
+                >Twitter</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                href=""
+                class="social-networks__link"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                href=""
+                class="social-networks__link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__nav container">
+        <nav class="navigation">
           <a
             href="#"
-            class="links navbar__logo-webstudio"
+            class="navigation__logo-webstudio"
           >
-            <span class="navbar__logospan"
+            <span class="navigation__logospan"
               >Web</span
             >Studio</a
           >
 
-          <ul class="sitenav">
-            <li class="sitenav__item">
+          <ul class="sitenavigation">
+            <li class="sitenavigation__item">
               <a
                 href="./index.html"
-                class="sitenav__link links"
+                class="sitenavigation__link sitenavigation__link--opened"
                 >Студия</a
               >
             </li>
-            <li class="sitenav__item">
+            <li class="sitenavigation__item">
               <a
                 href="./portfolio.html"
-                class="sitenav__link sitenav__link--opened links"
+                class="sitenavigation__link"
                 >Портфолио</a
               >
             </li>
-            <li class="sitenav__item">
+            <li class="sitenavigation__item">
               <a
                 href="#"
-                class="sitenav__link links"
+                class="sitenavigation__link"
                 >Контакты</a
               >
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
+        <ul class="auth-navigation">
+          <li class="auth-navigation__item">
             <a
               href="mailto:info@devstudio.com"
-              class="auth-nav__link links"
+              class="auth-navigation__link"
               aria-label="Mail Icon"
             >
               <svg
-                class="auth-nav__icon"
+                class="auth-navigation__icon"
                 width="16"
                 height="12"
               >
@@ -79,14 +194,14 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="auth-nav__item">
+          <li class="auth-navigation__item">
             <a
               href="tel:+380961111111"
-              class="links auth-nav__link"
+              class="auth-navigation__link"
               aria-label="Phone Icon"
             >
               <svg
-                class="auth-nav__icon"
+                class="auth-navigation__icon"
                 width="10"
                 height="16"
               >
