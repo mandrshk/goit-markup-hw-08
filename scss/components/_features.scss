@@ -9,6 +9,10 @@
     @include mq(tablet-only) {
         display: flex;
         flex-wrap: wrap;
+
+        &:nth-last-child(-n + 2) {
+                margin-bottom: 0;
+            }
     }
 
     @include mq(desktop) {

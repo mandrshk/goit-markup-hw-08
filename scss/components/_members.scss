@@ -51,6 +51,9 @@
         
         @include mq(mobile-only) {
             man-width: 450px;
+            &:last-child{
+                margin-bottom: 0;
+            }
             
         }
         @include mq(tablet-only) {

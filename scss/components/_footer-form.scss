@@ -2,7 +2,7 @@
     min-width: 200px;
 
     @include mq(not-desktop) {
-        margin-bottom: 60px;
+        margin-top: 60px;
         
         align-items: center;
     }
@@ -23,9 +23,6 @@
 
     color: var(--primary-white-color);
     
-    @include mq(not-desktop) {
-        margin-top: 60px;
-    }
 }
 
 .footer-form__email {
